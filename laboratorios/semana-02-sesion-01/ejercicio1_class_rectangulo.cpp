@@ -18,6 +18,7 @@
 // Ejecutar:  ./bin/ejercicio1
 
 #include <iostream>
+using namespace std;
 
 class Rectangulo {
 private:
@@ -29,24 +30,32 @@ public:
     double getAltura() { return altura; }
 
     bool setBase(double nuevaBase) {
+        if(nuevaBase <= 0) {
+            return false;
+        }
+        base = nuevaBase;
         // TODO: si nuevaBase no es positiva, devuelve false sin modificar base.
         // Si es positiva, asigna base = nuevaBase y devuelve true.
-        return false;
+        return true;
     }
 
     bool setAltura(double nuevaAltura) {
+        if (nuevaAltura <= 0) {
+            return false;
+        }
+        altura = nuevaAltura;
         // TODO: mismo patron que setBase(), pero para altura.
-        return false;
+        return true;
     }
 
     double area() {
+        return base * altura;
         // TODO: retorna base * altura
-        return 0.0;
     }
 
     double perimetro() {
+        return 2 * (base + altura);
         // TODO: retorna 2 * (base + altura)
-        return 0.0;
     }
 };
 
@@ -55,15 +64,15 @@ int main() {
     r.setBase(10.0);
     r.setAltura(5.0);
 
-    std::cout << "Area: " << r.area() << ", Perimetro: " << r.perimetro() << std::endl;
+    cout << "Area: " << r.area() << ", Perimetro: " << r.perimetro() << endl;
 
     bool aceptado = r.setBase(-3.0);
-    std::cout << "setBase(-3) rechazado: " << (!aceptado ? "true" : "false")
-              << ", base sigue en: " << r.getBase() << std::endl;
+    cout << "setBase(-3) rechazado: " << (!aceptado ? "true" : "false")
+    << ", base sigue en: " << r.getBase() << endl;
 
     r.setBase(20.0);
     r.setAltura(10.0);
-    std::cout << "Area: " << r.area() << ", Perimetro: " << r.perimetro() << std::endl;
+    cout << "Area: " << r.area() << ", Perimetro: " << r.perimetro() <<endl;
 
     return 0;
 }
