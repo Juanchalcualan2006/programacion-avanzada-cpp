@@ -10,7 +10,7 @@
 // Ejecutar:  ./bin/ejercicio1
 
 #include <iostream>
-
+using namespace std;
 bool esPrimo(int n) {
     if(n<2)return false;
     for(int i=2;i<n;i++){
@@ -22,9 +22,9 @@ bool esPrimo(int n) {
 int main() {
     for (int n = 2; n <= 30; ++n) {
         if (esPrimo(n)) {
-            std::cout << n << " ";
+            cout << n << " ";
         }
     }
-    std::cout << std::endl;
+    cout << endl;
     return 0;
 }

@@ -14,7 +14,9 @@
 // Ejecutar:  ./bin/ejercicio3
 
 #include <iostream>
-
+using namespace std;
+double area_rectangulo(double base, double altura) {
+    return base * altura;}
 // TODO: declara aqui tu funcion area_rectangulo(double base, double altura)
 
 int main() {
@@ -22,13 +24,13 @@ int main() {
     double base1 = 4.0;
     double altura1 = 5.0;
     double area1 = base1 * altura1;
-    std::cout << "Area 1: " << area1 << std::endl;
+    cout << "Area 1: " << area1 << endl;
 
     // Bloque 2 (misma logica, otros datos)
     double base2 = 9.0;
     double altura2 = 7.0;
     double area2 = base2 * altura2;
-    std::cout << "Area 2: " << area2 << std::endl;
+    cout << "Area 2: " << area2 <<endl;
 
     return 0;
 }
