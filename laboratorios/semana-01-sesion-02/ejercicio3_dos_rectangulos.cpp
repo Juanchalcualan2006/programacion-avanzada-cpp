@@ -74,7 +74,7 @@ int main() {
     cout << "Con funciones sueltas (bug incluido):" <<endl;
     imprimirConFuncionesSueltas();
 
-    cout << std::endl << "Con objetos (Parte B):" <<endl;
+    cout <<endl << "Con objetos (Parte B):" <<endl;
     imprimirConObjetos();
 
     return 0;

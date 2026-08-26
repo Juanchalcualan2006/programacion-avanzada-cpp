@@ -12,7 +12,7 @@
 // por consola.
 //
 // Salida esperada:
-// Creando r1...
+// Creando r1..
 // Area r1: 50
 // Creando r2 con base invalida...
 // Aviso: base invalida, se uso 1.0 por defecto

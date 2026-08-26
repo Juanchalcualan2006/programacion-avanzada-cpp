@@ -35,7 +35,7 @@ public:
         }
         std::cout << "Termometro creado con " << gradosCelsius << " grados Celsius" << std::endl;
 
-        // TODO: si celsiusInicial es menor que -273.15, asigna
+        // TODO: si celsiusInicial es menor que -273.15, asigna.
         // gradosCelsius = 0.0 y avisa por consola:
         // "Aviso: temperatura invalida, se uso 0 por defecto"
         // Si no, asigna gradosCelsius = celsiusInicial.

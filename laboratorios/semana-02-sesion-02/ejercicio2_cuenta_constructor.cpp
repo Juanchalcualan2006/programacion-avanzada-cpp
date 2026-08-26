@@ -41,9 +41,9 @@ public:
             saldo = 0.0;
         }
         std::cout << "CuentaBancaria destruida, saldo final: " << saldo << std::endl;
-        
+
         // TODO: imprime "CuentaBancaria destruida, saldo final: "
-        // seguido del saldo.
+        // seguido del saldo
     }
 
     double getSaldo() { return saldo; }
