@@ -2,7 +2,7 @@
 //
 // Sin herencia, Perro y Gato repetirían, línea por línea, los mismos
 // atributos, setters, getters y describir(). Animal agrupa eso una
-// sola vez; Perro y Gato heredan de Animal (`: public Animal`, ya
+// sola vez; Perro y Gato heredan d Animal (`: public Animal`, ya
 // escrito abajo) y solo agregan lo que de verdad es propio de cada uno.
 //
 // Completa los TODO en Animal: el mismo patrón de setters con

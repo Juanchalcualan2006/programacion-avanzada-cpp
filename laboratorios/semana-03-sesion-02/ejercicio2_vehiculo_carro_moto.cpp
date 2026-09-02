@@ -1,6 +1,6 @@
 // Ejercicio 2: Vehiculo, Carro y Moto
 //
-// Mismo patrón del ejercicio 1, en un dominio distinto: Vehiculo agrupa
+// Mismo patrón del ejercicio 1, e un dominio distinto: Vehiculo agrupa
 // velocidadKmh y kilometraje; Carro y Moto heredan de Vehiculo y
 // agregan tocarBocina() y acelerar(). Completa los TODO en Vehiculo.
 //

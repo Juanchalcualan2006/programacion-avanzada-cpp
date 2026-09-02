@@ -4,7 +4,7 @@
 // 1 y 2: Empleado agrupa salarioBase y aniosServicio; Gerente y
 // Vendedor heredan de Empleado y agregan aprobarPresupuesto() y
 // registrarVenta(). Además, agrega a Empleado un método nuevo,
-// calcularBonoAntiguedad(), que Gerente y Vendedor van a heredar sin
+// calcularBonoAntiguedad(), qu Gerente y Vendedor van a heredar sin
 // tener que escribirlo de nuevo.
 //
 // Salida esperada:
