@@ -74,11 +74,16 @@ int main() {
 
     mfp.setResolucionDPI(600);
     mfp.escanear();
+    
 
+    //el compilador da un error de ambiguedad 
+    //sobre la palabra "setNumeroSerie" y "describir" ya que ambas funciones estan 
+    //definidas en la clase Dispositivo y al heredar de Impresora y Escaner, el compilador no sabe a cual de las dos funciones llamar.
+    
     // TODO: antes de descomentar, predice: ¿que error da el compilador
     // y sobre que palabra exactamente?
-    // mfp.setNumeroSerie(1234);
-    // mfp.describir();
+    mfp.setNumeroSerie(1234);
+    mfp.describir();
 
     return 0;
 }
