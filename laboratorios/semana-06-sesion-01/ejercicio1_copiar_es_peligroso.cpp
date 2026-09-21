@@ -27,7 +27,16 @@ class RegistroDeVuelo {
         // Sin constructor de copia propio: el compilador genera uno por
         // defecto que copia "alturas" y "capacidad" tal cual estan, sin
         // reservar un arreglo nuevo. Eso es lo que hoy vamos a revisar.
+        RegistroDeVuelo(const RegistroDeVuelo& otro) {
+            capacidad = otro.capacidad;
+            alturas = new double[capacidad];
+            for (int i = 0; i < capacidad; i++) {
+                alturas[i] = otro.alturas[i];
+            }
+            std::cout << "Registro de vuelo copiado para " << capacidad << " lecturas" << std::endl;
+        }
 };
+
 
 int main() {
     RegistroDeVuelo registro1(5);
